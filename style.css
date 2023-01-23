@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: aqua;
+  color: black;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+form {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background: white;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: black;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.bucket-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bucket-list {
+  list-style: none;
+  min-width: 33%;
+}
+
+.bucket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(203, 243, 25);
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.bucket li {
+  padding: 0 0.5;
+  width: 90%;
+  text-align: center;
+}
+
+.delete-btn,
+.complete-btn {
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: green;
+}
+
+.delete-btn {
+  background: red;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
